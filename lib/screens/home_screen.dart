@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:app_portafolio_personal/themes/app_theme.dart';
 import 'package:app_portafolio_personal/widgets/custom_footer.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -55,14 +56,40 @@ class HomeScreen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  CircleAvatar(
-                    radius: 55,
-                    backgroundColor: Color.fromARGB(255, 255, 36, 36),
-                    child: CircleAvatar(
-                      radius: 50,
-                      backgroundColor: AppTheme.background,
-                      backgroundImage: const AssetImage('assets/images/perfil.png'),
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+
+                        Image.asset(
+                          'assets/images/trebol.png',
+                          width: 125,
+                          height: 125,
+                          fit: BoxFit.contain,
+                        ),
+          
+                        const SizedBox(width: 15),
+
+                      CircleAvatar(
+                        radius: 55,
+                        backgroundColor: Color.fromARGB(255, 255, 36, 36),
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundColor: AppTheme.background,
+                          backgroundImage: const AssetImage('assets/images/perfil.png'),
+                        ),
+                      ),
+
+                        const SizedBox(width: 15),
+
+                        Image.asset(
+                          'assets/images/grimorio.png',
+                          width: 150,
+                          height: 150,
+                          fit: BoxFit.contain,
+                          
+                        ),
+                      ]
                   ),
                   SizedBox(height: 15),
                   Text(
@@ -72,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: const Color.fromARGB(221, 255, 255, 255),
                       letterSpacing: 0.5,
-            )
+                    ) 
                   ),
                   SizedBox(height: 5),
                   Text(
@@ -123,21 +150,53 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         ListTile(
-                          leading: Icon(Icons.code, color: primaryColor),
+                          leading: Icon(Icons.code, 
+                            color: Color.fromARGB(255, 255, 0, 0)
+                            ),
                           title: Text('Programación'),
                           subtitle: Text('Crear pequeños scripts y layouts web/móviles.'),
                         ),
                         Divider(indent: 20, endIndent: 20),
                         ListTile(
-                          leading: Icon(Icons.translate, color: primaryColor),
+                          leading: Icon(Icons.translate, 
+                            color: Color.fromARGB(255, 255, 0, 0)
+                            ),
                           title: Text('Aprender idiomas'),
                           subtitle: Text('Practicar inglés con videos y lecturas técnicas.'),
                         ),
                         Divider(indent: 20, endIndent: 20),
                         ListTile(
-                          leading: Icon(Icons.music_note, color: primaryColor),
+                          leading: Icon(Icons.music_note, 
+                            color: Color.fromARGB(255, 255, 0, 0)
+                            ),
                           title: Text('Música y Gaming'),
                           subtitle: Text('Escuchar podcasts de tecnología y jugar en mis tiempos libres.'),
+                        ),
+                        Divider(indent: 20, endIndent: 20),
+                        ListTile(
+                          leading: Icon(Icons.sports_soccer, 
+                            color: Color.fromARGB(255, 255, 0, 0)
+                            ),
+                          title: Text('Deportes'),
+                          subtitle: Text('Practicar algunos deportes en mi tiempo libre, como futbol o basketball.'),
+                        ),
+                        
+                        Divider(indent: 20, endIndent: 20),
+                        ListTile(
+                          leading: Icon(Icons.mic, 
+                            color: Color.fromARGB(255, 255, 0, 0)
+                            ),
+                          title: Text('Canto Coral'),
+                          subtitle: Text('Practicar canto en grupo, desarrollando mi voz y mi sentido musical. Actualmente formo parte del Orfeón universitario de la UNIMAR.'),
+                        ),
+                        Divider(indent: 20, endIndent: 20),
+                        ListTile(
+                          leading: FaIcon(
+                            FontAwesomeIcons.guitar,
+                            color: const Color.fromARGB(255, 255, 0, 0),
+                          ),
+                          title: Text('Tocar instrumento'),
+                          subtitle: Text('suelo tocar la guitarra, aunque no soy un experto, me gusta practicar y aprender nuevas canciones.'),
                         ),
                       ],
                     ),
