@@ -67,6 +67,23 @@ class ContactScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Card(
+              elevation: 5,
+              shadowColor: Colors.black,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15),
+                side: const BorderSide(color: Color.fromARGB(255, 0, 0, 0), width: 1),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Image.asset(
+                  'assets/images/katana_yami.png', 
+                  width: double.infinity,
+                  height: 200,
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
           ],
         ),
       ),

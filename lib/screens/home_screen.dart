@@ -60,8 +60,8 @@ class HomeScreen extends StatelessWidget {
                     backgroundColor: Color.fromARGB(255, 255, 36, 36),
                     child: CircleAvatar(
                       radius: 50,
-                      backgroundColor: primaryColor,
-                      child: Icon(Icons.person, size: 55, color: Colors.white),
+                      backgroundColor: AppTheme.background,
+                      backgroundImage: const AssetImage('assets/images/perfil.png'),
                     ),
                   ),
                   SizedBox(height: 15),
