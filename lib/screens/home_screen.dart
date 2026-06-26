@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             const Text(
-              'Soy un estudiante apasionado por la tecnología y el desarrollo\n de aplicaciones móviles. Me gusta aprender nuevas herramientas y crear \n soluciones eficientes. Actualmente estoy profundizando mis conocimientos en \n Dart y Flutter.',
+              'Soy un estudiante apasionado por la tecnología y el desarrollo de aplicaciones móviles. Me gusta aprender nuevas herramientas y crear soluciones eficientes. Actualmente estoy profundizando mis conocimientos en Dart y Flutter.',
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24),

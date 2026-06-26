@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:app_portafolio_personal/screens/home_screen.dart';
+import 'package:app_portafolio_personal/screens/contact_screen.dart';
+import 'package:app_portafolio_personal/themes/app_theme.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,10 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portafolio Personal',
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Mi Portafolio')),
-        body: const Center(child: Text('Hola, mundo!')),
-      ),
+      theme: AppTheme.lightTheme,
+      initialRoute: 'home',
+      routes: {
+        'home': (context) => const HomeScreen(),
+        'contact': (context) => const ContactScreen(),
+      },
     );
   }
 }
