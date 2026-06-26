@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:app_portafolio_personal/themes/app_theme.dart';
 
-class CustomFooter extends StatelessWidget {
-  const CustomFooter({super.key});
+class ContactFooter extends StatelessWidget {
+  const ContactFooter({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class CustomFooter extends StatelessWidget {
           ),
           SizedBox(height: 5),
           Text(
-            'Evaluación Programación III',
+            'La magia más poderosa es la de nunca rendirse',
             style: TextStyle(fontSize: 12, color: Colors.grey),
           ),
         ],
