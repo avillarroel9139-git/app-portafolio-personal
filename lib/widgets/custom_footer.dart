@@ -10,8 +10,7 @@ class CustomFooter extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        // Usamos el color principal pero con opacidad para que se vea moderno
-        color: AppTheme.primary.withValues(alpha: 0.1),
+        color: const Color.fromARGB(255, 0, 0, 0),
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(20),
           topRight: Radius.circular(20),

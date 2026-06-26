@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
@@ -7,7 +8,15 @@ class ContactScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Contacto & Firma'),
+        title: Text(
+          'Contacto & Firma',
+          style: GoogleFonts.pirataOne(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: const Color.fromARGB(255, 255, 0, 0),
+            letterSpacing: 0.5,
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -19,9 +28,24 @@ class ContactScreen extends StatelessWidget {
               'Desarrollado por:',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
-            const Text(
-              'Anyer Villarroel',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Text(
+              'Anyer David Villarroel Ramos',
+              style: GoogleFonts.unifrakturCook(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 0.5,
+              ),
+            ),
+
+            Text(
+              'C.I.: V-30.209.139',
+              style: GoogleFonts.unifrakturCook(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                letterSpacing: 0.5,
+              ),
             ),
             const Divider(height: 40),
 
@@ -31,13 +55,13 @@ class ContactScreen extends StatelessWidget {
               child: const Column(
                 children: [
                   ListTile(
-                    leading: Icon(Icons.email, color: Colors.indigo),
+                    leading: Icon(Icons.email, color: Color.fromARGB(255, 255, 0, 0)),
                     title: Text('Correo Electrónico'),
                     subtitle: Text('avillarroel.9139@unimar.edu.ve'),
                   ),
                   ListTile(
-                    leading: Icon(Icons.phone, color: Colors.indigo),
-                    title: Text('Teléfono / Telegram'),
+                    leading: Icon(Icons.phone, color: Color.fromARGB(255, 255, 0, 0)),
+                    title: Text('Teléfono / WhatsApp'),
                     subtitle: Text('+58 424 8525158'),
                   ),
                 ],

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portafolio Personal',
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.darkTheme,
       initialRoute: 'home',
       routes: {
         'home': (context) => const HomeScreen(),
