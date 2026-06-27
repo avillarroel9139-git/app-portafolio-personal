@@ -19,7 +19,7 @@ class AudioService {
 
       await audioPlayer.setReleaseMode(ReleaseMode.loop); 
 
-      await audioPlayer.setVolume(50.0); 
+      await audioPlayer.setVolume(0.5); 
       
       await audioPlayer.play(AssetSource('audios/grandeur.mp3'));
       

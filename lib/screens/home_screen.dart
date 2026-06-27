@@ -3,9 +3,24 @@ import 'package:app_portafolio_personal/themes/app_theme.dart';
 import 'package:app_portafolio_personal/widgets/custom_footer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:app_portafolio_personal/services/audio_service.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      AudioService().iniciarMusica();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
